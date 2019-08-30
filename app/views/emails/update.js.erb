@@ -1,0 +1,8 @@
+if ('@email.read' == true){
+    console.log("@email.read")
+    document.getElementById("<%=@email.id%>btn-read").textContent= "marquer comme non lue";
+    
+
+}else{
+    document.getElementById("<%=@email.id%>btn-read").textContent="marquer comme  lue";
+    document.getElementById("mail<%=@email.id%>").style.backgroundColor = "grey";}
