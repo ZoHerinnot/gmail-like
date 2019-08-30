@@ -1,0 +1,11 @@
+
+<tr id="<%=email.id%>" >
+    <th scope="row"></th>
+    <td id="mail<%=email.id%>" ><a href="/emails/<%=email.id%>" data-remote=true><%=email.object%></a></td>
+    <td id="<%=email.object%>" style="display: none"><%=email.body%><br>
+    <a href="/emails/<%=@email.id%>" data-method = "delete" data-remote = true  data-confirm ="email sera supprimé" class="badge badge-danger">Supprimer</a><br>
+      
+    <a href="/emails/<%=email.id%>" data-method="put"  id="<%=email.id%>btn-read" data-remote= true class="badge badge-info"  >Marquer comme non lu</a>
+            
+    </td>
+</tr>
